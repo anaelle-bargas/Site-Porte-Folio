@@ -6,43 +6,15 @@ body{
     align-items: center;
     background-repeat: no-repeat;
     background-size: 5%;
-    
+    background: linear-gradient(rgb(30, 53, 31), 60%, rgb(255, 255, 255));
+    background-image: url("./../images/abstract-6704211_1920.jpg");
+    background-repeat:no-repeat;
+    font-family: 'Playfair Display', serif;
     /* font-family: 'Inter', sans-serif;
     font-family: 'Playfair Display', serif; */
 
 
 
 }
-
-#vue_accueil{
-    /* background-color: rgb(3, 35, 14); */
-    width: 100%;
-    height:auto;
-    display:flex;
-}
-
-#image_anaelle>img{
-    width : 400px;
-    height : 350px;
-    margin-left: 50px;
-    box-shadow: 10px 5px 5px rgb(4, 55, 21);
-}
-
-#vue_accueil>#presentation{
-    margin-left: 50px;
-}
-
-#vue_accueil>#presentation>h1{
-    font-weight: 1;
-    font-size: 90px;
-    font-family: 'Playfair Display', serif;
-}
-
-#vue_accueil>#presentation>p{
-    font-size: 25px;
-    font-family: 'Playfair Display', serif;
-}
-
-
 
 
