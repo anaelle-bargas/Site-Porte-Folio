@@ -8,20 +8,33 @@ body{
     background-repeat: no-repeat;
     background-size: 5%;
     background: linear-gradient(rgb(30, 53, 31), 60%, rgb(255, 255, 255));
-    background-image: url("./../images/fractal-969516_1920.jpg");
+    /* background-image: url("./../images/fractal-969516_1920.jpg"); */
     background-repeat:no-repeat;
     font-family: 'Playfair Display', serif;
     /* font-family: 'Inter', sans-serif;
     font-family: 'Playfair Display', serif; */
 
-    color: #000000;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 
 
 }
-
+html{
+    overflow-x:hidden;
+}
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
 
 #presentation>h1{
     font-size:90px;
