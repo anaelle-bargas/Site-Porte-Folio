@@ -64,28 +64,32 @@ video{
 }
 
 #centre_gauche, #centre_droite{
-    width:150px;
+    width:5%;
     height:450px;
     /* background-color: aqua; */
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: end;
 }
-#centre_droite>div>img{
+#centre_droite>div{
+    height:12.5%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#centre_droite>div>div>img{
     height: 50%;
     width:auto;
-}
-
-#centre_droite>div:hover{
-    /* height: 60%; */
-    transition-duration: 0.2s;
 }
 
 #centre_droite{
     align-items: end;
     
 }
-#centre_gauche>div, #centre_droite>div{
+#centre_droite>div>div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,8 +97,34 @@ video{
     box-shadow:  0px 0px 50px rgb(86, 86, 87);
     height:60px;
     width:60px;
-    background-color: white;
     
+}
+
+#centre_droite>div>div:hover{
+    cursor:pointer;
+}
+
+#descriptions{
+    background-color: antiquewhite;
+    width:15%;
+    height:450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 3%;
+}
+
+#descriptions>p{
+    width:auto;
+    height:auto;
+    padding-left:20%;
+    font-size: 3vmin;
+    font-family: 'Great Vibes', cursive;
+    background-color: aqua;
+    margin:auto;
+    text-align: left;
+
 }
 
 #presentation{
@@ -103,11 +133,12 @@ video{
     border-radius: 35px;
     height:500px;
     width:400px;
-    box-shadow:  0px 0px 50px rgb(86, 86, 87);
+    box-shadow:  0px 0px 60px 1px rgb(86, 86, 87);
     display:flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin:3%;
 }
 
 #nom{
