@@ -4,6 +4,6 @@ function rapetisser(i){
 }
 
 function agrandir(i){
-    document.querySelectorAll("#centre_droite>div>div>img")[i].style.height="60%";
+    document.querySelectorAll("#centre_droite>div>div>img")[i].style.height="55%";
 }
 
