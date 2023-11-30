@@ -1,12 +1,12 @@
 html{
-    width:100%;
-    height:100vh;
-    margin-top: -0.4%;
-    margin-left:-0.4%;
+    width:102%;
+    height:102vh;
+    margin-top: -0.7%;
+    margin-left:-0.7%;
     overflow-x: hidden;
 }
 body{
-    width:100%;
+    width:102%;
     height:auto;
     display:flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ body{
 
 body>div{
     width:100%;
-    height:100vh;
+    height:101vh;
 
 }
 
@@ -30,7 +30,7 @@ body>div{
 
 #gauche{
     width:50%;
-    height:100vh;
+    height:101vh;
     opacity:0;
     animation : apparition 1s 0.1s ease-out forwards;
     transform:translateX(-50%);
@@ -39,7 +39,7 @@ body>div{
 
 video{
     width:100%;
-    height: 100vh;
+    height: 101vh;
     object-fit: cover;
     position: relative;
     left: 0;
@@ -73,7 +73,8 @@ video{
 #centre_gauche, #centre_droite{
     width:20%;
     height:450px;
-    right:-20%;
+    /* left:120%; */
+    left:147%;
     /* background-color: aqua; */
     display:flex;
     flex-direction: column;
