@@ -91,32 +91,32 @@ video{
 
 
 
-#div_formations:hover{
+.div_formations:hover{
     transform:translateX(-70%);
     transition-duration: 0.5s;
 }
 
-#div_accueil:hover{
+.div_accueil:hover{
     transform:translateX(-30%);
     transition-duration: 0.5s;
 }
 
-#div_competences:hover{
+.div_competences:hover{
     transform:translateX(-40%);
     transition-duration: 0.5s;
 }
 
-#div_experience:hover{
+.div_experience:hover{
     transform:translateX(-35%);
     transition-duration: 0.5s;
 }
 
-#div_contact:hover{
+.div_contact:hover{
     transform:translateX(-30%);
     transition-duration: 0.5s;
 }
 
-#div_a_propos:hover{
+.div_a_propos:hover{
     transform:translateX(-30%);
     transition-duration: 0.5s;
 }
@@ -248,7 +248,10 @@ video{
     
 }
 
-
+#centre_droite>div>p>a{
+    color:#213049;
+    text-decoration: none;
+}
 
 
 
@@ -284,6 +287,8 @@ video{
     border-radius: 35px;
 }
 
+
+
 @keyframes apparition{
     100%{
         opacity:1;
@@ -298,3 +303,6 @@ video{
 
     }
 }
+
+
+
