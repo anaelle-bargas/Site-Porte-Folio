@@ -7,7 +7,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=Great+Vibes&family=Lobster+Two&family=Noto+Serif:wght@100&family=Old+Standard+TT&family=Unna&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=Great+Vibes&family=Lobster+Two&family=Noto+Serif:wght@100&family=Old+Standard+TT&family=Unna&family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -49,9 +49,9 @@
                         <a onclick = "onglets_sur_le_cote()" href="#competences"><div><img src="./../images/competence.png" id = "bla" alt=""></div></a>
                         <p><a onclick = "onglets_sur_le_cote()" href="#competences">Compétences</a></p>
                     </div>
-                    <div id = "div_experience">
-                        <a onclick = "onglets_sur_le_cote()" href="#experience"><div><img src="./../images/mallette.png" id = "bla" alt=""></div></a>
-                        <p><a onclick = "onglets_sur_le_cote()" href="#experience">Expérience</a></p>
+                    <div id = "div_experiences">
+                        <a onclick = "onglets_sur_le_cote()" href="#experiences"><div><img src="./../images/mallette.png" id = "bla" alt=""></div></a>
+                        <p><a onclick = "onglets_sur_le_cote()" href="#experiences">Expérience</a></p>
                     </div>
                     <div id = "div_contact">                    
                         <a onclick = "onglets_sur_le_cote()" href="#contact"><div><img src="./../images/e-mail.png" id = "bla" alt=""></div></a>
@@ -71,12 +71,35 @@
         </div>
 
         
-        <div id = "accueil"><p>Bla</p></div>
-        <div id = "formations"><p>Bla</p></div>
-        <div id = "competences"><p>Bla</p></div>
-        <div id = "experience"><p>Bla</p></div>
-        <div id = "contact"><p>Bla</p></div>
-        <div id = "a_propos"><p>Bla</p></div>
+        <div id = "accueil" onvisible = "actuelle_div(this.id)">
+                    
+            <div id = "paroles">
+                <div id = "qui">
+                    <p id = "title">Bienvenue</p>
+                    <p>Je suis Anaëlle Bargas, développeuse back-end, basée à Caen, en France. </p>
+    
+                </div>
+    
+                <div id = "passionnee" style="display:flex;">
+                    <p>Vous cherchez quelqu'un qui vous accompagnera dans votre projet informatique?</p>
+                    <p>Ne cherchez plus, vous l'avez trouvé!</p>
+                </div>
+            </div>
+
+            <div class="button_radio">
+                <input type="radio" name="qui" id="radio_qui" onclick="check_qui()" checked>
+                <input type="radio" name="passionnee" id="radio_passionnee" onclick="check_passionnee()" >
+            </div>
+
+        </div>
+
+
+
+        <div id = "formations" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
+        <div id = "competences" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
+        <div id = "experiences" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
+        <div id = "contact" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
+        <div id = "a_propos" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
 
         <script src="./../js/index2.js"></script>
     </body>

@@ -15,7 +15,7 @@ body{
 
 
 body>div{
-    width:100%;
+    width:95%;
     height:101vh;
 
 }
@@ -92,32 +92,32 @@ video{
 
 
 .div_formations:hover{
-    transform:translateX(-70%);
+    transform:translateX(-80%);
     transition-duration: 0.5s;
 }
 
 .div_accueil:hover{
-    transform:translateX(-30%);
-    transition-duration: 0.5s;
-}
-
-.div_competences:hover{
     transform:translateX(-40%);
     transition-duration: 0.5s;
 }
 
-.div_experience:hover{
-    transform:translateX(-35%);
+.div_competences:hover{
+    transform:translateX(-50%);
+    transition-duration: 0.5s;
+}
+
+.div_experiences:hover{
+    transform:translateX(-45%);
     transition-duration: 0.5s;
 }
 
 .div_contact:hover{
-    transform:translateX(-30%);
+    transform:translateX(-40%);
     transition-duration: 0.5s;
 }
 
 .div_a_propos:hover{
-    transform:translateX(-30%);
+    transform:translateX(-40%);
     transition-duration: 0.5s;
 }
 
@@ -273,6 +273,62 @@ video{
 
 
 
+#accueil{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#213049;
+}
+
+#accueil>div{
+    display:flex;
+
+    font-size:3vmin;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#paroles{
+    transform: translateX(25%);
+    width:200%;
+    left:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#paroles>div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#title{
+    font-size:10vmin;
+    font-family:'Bodoni Moda', serif;
+    /* background-color: bisque; */
+    padding-top: 0px;
+    margin-top: 0%;
+}
+
+#qui{
+    padding-top: 0px;
+    margin-top: 0%;
+}
+
+
+
+
+.button_radio input[type="radio"]:checked {
+    background-color: #213049;
+    /* Autres styles spécifiques au checked ici */
+}
+
+
 ::-webkit-scrollbar{
     width:0.6em;
 }
@@ -298,11 +354,21 @@ video{
 
 
 
-@keyframes deplacement{
+@keyframes deplacement_passionnee_qui{
     from{
-
+        transform:translateX(-25%);;
+    }
+    to{
+        transform:translateX(25%);
     }
 }
 
-
+@keyframes deplacement_qui_passionnee{
+    from{
+        transform:translateX(25%);
+    }
+    to{
+        transform:translateX(-25%);
+    }
+}
 
