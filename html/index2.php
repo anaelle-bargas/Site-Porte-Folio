@@ -1,3 +1,11 @@
+<?php
+phpinfo();  
+$datas = yaml_parse_file("./../yaml/index2.yaml");
+print_r($datas);
+
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -95,7 +103,11 @@
 
 
 
-        <div id = "formations" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
+        <div id = "formations" onvisible = "actuelle_div(this.id)">
+            <div id = "toutes_les_formations"></div>
+        </div>
+
+
         <div id = "competences" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
         <div id = "experiences" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
         <div id = "contact" onvisible = "actuelle_div(this.id)"><p>Bla</p></div>
