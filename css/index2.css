@@ -76,6 +76,7 @@ video{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index:99999999999;
 }
 
 
@@ -285,7 +286,7 @@ video{
 #accueil>div{
     display:flex;
 
-    font-size:3vmin;
+    font-size:2.5vmin;
     text-align: center;
     font-weight: lighter;
 }
@@ -297,7 +298,6 @@ video{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 #paroles>div{
     display:flex;
@@ -305,12 +305,13 @@ video{
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    position:relative;
+    z-index: 0;
 }
 
 #title{
     font-size:10vmin;
     font-family:'Bodoni Moda', serif;
-    /* background-color: bisque; */
     padding-top: 0px;
     margin-top: 0%;
 }

@@ -1,0 +1,33 @@
+-
+  nom_formation: Diplôme National du Brevet
+  etablissement: Collège Georges Braques
+  date_debut: 2016
+  date_fin: 2020
+  lieu: "Dieppe"
+  contenu_formation: >
+    J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.
+
+-
+  nom_formation: Certificat D'Etudes Musicales
+  etablissement: Conservatoire à Rayonnement Départemental Camille Saint Saëns
+  date_debut: 2012
+  date_fin: 2022
+  lieu: Dieppe
+  contenu_formation:
+
+-
+  nom_formation: Baccalauréat Général
+  etablissement: Lycée Pablo Néruda
+  date_debut: 2021
+  date_fin: 2023
+  lieu: Dieppe
+  contenu_formation: >
+    En plus du programme exigé, j'ai choisi les spécialités Numérique et Sciences Informatiques, Mathématiques, et Physique-Chimie. J'ai obtenu mon bac avec la mention 'Très Bien'.
+
+-
+  nom_formation:
+  etablissement:
+  date_debut:
+  date_fin:
+  lieu:
+  contenu_formation:

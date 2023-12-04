@@ -18,7 +18,6 @@ function onglets_sur_le_cote(){
   document.querySelector("#centre_gauche").style.right="-16%";
   document.querySelector("#centre_gauche").style.position="fixed";
   document.querySelector("#centre_droite").style.position="fixed";
-  document.querySelector("#centre_droite").style.position="fixed";
   nbClick++;
   if(nbClick==1){
     document.querySelector("#div_formations").classList.add('div_formations');
