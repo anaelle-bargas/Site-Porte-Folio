@@ -1,7 +1,5 @@
 <?php
-phpinfo();  
 $datas = yaml_parse_file("./../yaml/index2.yaml");
-print_r($datas);
 
 
 ?>
@@ -11,7 +9,7 @@ print_r($datas);
     <head>
         <meta charset="utf-8">
         <title>SitePorteFolio</title>        
-        <link rel="stylesheet" href="./../css/index2.css">
+        <link rel="stylesheet" href="../css/index2.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,7 +102,130 @@ print_r($datas);
 
 
         <div id = "formations" onvisible = "actuelle_div(this.id)">
-            <div id = "toutes_les_formations"></div>
+
+            <div id= "div_for_scroll">
+                
+                <div id = "toutes_les_formations">
+                
+                    <div>
+                        <div>
+                            <p id="onglet_formations">Diplôme</p>
+                            <p><?=$datas[0]["nom_formation"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Etablissement</p>
+                            <p><?=$datas[0]["etablissement"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de début</p>
+                            <p><?=$datas[0]["date_debut"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de fin</p>
+                            <p><?=$datas[0]["date_fin"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Lieu</p>
+                            <p><?=$datas[0]["lieu"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Contenu</p>
+                            <p><?=$datas[0]["contenu_formation"]?></p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div>
+                        <div>
+                            <p id="onglet_formations">Diplôme</p>
+                            <p>Diplôme National du Brevet</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Etablissement</p>
+                            <p>Collège Georges Braques</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de début</p>
+                            <p>2016</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de fin</p>
+                            <p>2020</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Lieu</p>
+                            <p>Dieppe, FR</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Contenu</p>
+                            <p>J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.</p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div>
+                        <div>
+                            <p id="onglet_formations">Diplôme</p>
+                            <p>Diplôme National du Brevet</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Etablissement</p>
+                            <p>Collège Georges Braques</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de début</p>
+                            <p>2016</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de fin</p>
+                            <p>2020</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Lieu</p>
+                            <p>Dieppe, FR</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Contenu</p>
+                            <p>J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.</p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div>
+                        <div>
+                            <p id="onglet_formations">Diplôme</p>
+                            <p>Diplôme National du Brevet</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Etablissement</p>
+                            <p>Collège Georges Braques</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de début</p>
+                            <p>2016</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de fin</p>
+                            <p>2020</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Lieu</p>
+                            <p>Dieppe, FR</p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Contenu</p>
+                            <p>J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.</p>
+                        </div>
+                    </div>
+
+
+   
+               </div>
+            </div>
+
         </div>
 
 
