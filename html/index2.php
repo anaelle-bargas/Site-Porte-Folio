@@ -110,7 +110,7 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
                     <div>
                         <div>
                             <p id="onglet_formations">Diplôme</p>
-                            <p><?=$datas[0]["nom_formation"]?></p>
+                            <p><b style="color:#213049;"><?=$datas[0]["nom_formation"]?></b></p>
                         </div>
                         <div>
                             <p id="onglet_formations">Etablissement</p>
@@ -135,93 +135,88 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
                     </div>
 
                     
-
                     <div>
                         <div>
                             <p id="onglet_formations">Diplôme</p>
-                            <p>Diplôme National du Brevet</p>
+                            <p><b style="color:#213049;"><?=$datas[1]["nom_formation"]?></b></p>
                         </div>
                         <div>
                             <p id="onglet_formations">Etablissement</p>
-                            <p>Collège Georges Braques</p>
+                            <p><?=$datas[1]["etablissement"]?></p>
                         </div>
                         <div>
                             <p id="onglet_formations">Date de début</p>
-                            <p>2016</p>
+                            <p><?=$datas[1]["date_debut"]?></p>
                         </div>
                         <div>
                             <p id="onglet_formations">Date de fin</p>
-                            <p>2020</p>
+                            <p><?=$datas[1]["date_fin"]?></p>
                         </div>
                         <div>
                             <p id="onglet_formations">Lieu</p>
-                            <p>Dieppe, FR</p>
+                            <p><?=$datas[1]["lieu"]?></p>
                         </div>
                         <div>
                             <p id="onglet_formations">Contenu</p>
-                            <p>J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.</p>
-                        </div>
-                    </div>
-
-                    
-
-                    <div>
-                        <div>
-                            <p id="onglet_formations">Diplôme</p>
-                            <p>Diplôme National du Brevet</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Etablissement</p>
-                            <p>Collège Georges Braques</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de début</p>
-                            <p>2016</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de fin</p>
-                            <p>2020</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Lieu</p>
-                            <p>Dieppe, FR</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Contenu</p>
-                            <p>J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.</p>
-                        </div>
-                    </div>
-
-                    
-
-                    <div>
-                        <div>
-                            <p id="onglet_formations">Diplôme</p>
-                            <p>Diplôme National du Brevet</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Etablissement</p>
-                            <p>Collège Georges Braques</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de début</p>
-                            <p>2016</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de fin</p>
-                            <p>2020</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Lieu</p>
-                            <p>Dieppe, FR</p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Contenu</p>
-                            <p>J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.</p>
+                            <p><?=$datas[1]["contenu_formation"]?></p>
                         </div>
                     </div>
 
 
+                    <div>
+                        <div>
+                            <p id="onglet_formations">Diplôme</p>
+                            <p><b style="color:#213049;"><?=$datas[2]["nom_formation"]?></b></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Etablissement</p>
+                            <p><?=$datas[2]["etablissement"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de début</p>
+                            <p><?=$datas[2]["date_debut"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de fin</p>
+                            <p><?=$datas[2]["date_fin"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Lieu</p>
+                            <p><?=$datas[2]["lieu"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Contenu</p>
+                            <p><?=$datas[2]["contenu_formation"]?></p>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <p id="onglet_formations">Diplôme</p>
+                            <p><b style="color:#213049;"><?=$datas[3]["nom_formation"]?></b></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Etablissement</p>
+                            <p><?=$datas[3]["etablissement"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de début</p>
+                            <p><?=$datas[3]["date_debut"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Date de fin</p>
+                            <p><?=$datas[3]["date_fin"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Lieu</p>
+                            <p><?=$datas[3]["lieu"]?></p>
+                        </div>
+                        <div>
+                            <p id="onglet_formations">Contenu</p>
+                            <p><?=$datas[3]["contenu_formation"]?></p>
+                        </div>
+                    </div>
    
                </div>
             </div>

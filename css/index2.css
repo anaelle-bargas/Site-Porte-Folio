@@ -11,6 +11,7 @@ body{
     display:flex;
     flex-direction: column;
     font-family: 'Old Standard TT', serif;
+    font-size: 2vmin;
 }
 
 
@@ -323,6 +324,16 @@ video{
     margin-top: 0%;
 }
 
+#onglet_formations{
+    font-size:3vmin;
+    font-family:'Bodoni Moda', serif;
+    padding-top: 0px;
+    margin-top: 0%;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    color: #213049;
+}
+
 #qui{
     padding-top: 0px;
     margin-top: 0%;
@@ -354,11 +365,12 @@ video{
     /* padding:5%; */
     width:auto;
     overflow-x: scroll;
+    overflow-y: hidden;
     margin-left: 2%;
     /* background-color: antiquewhite; */
     /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    align-items: center; */
+    justify-content: flex-start;
 }
 #toutes_les_formations{
     height:auto;
@@ -373,7 +385,9 @@ video{
 
 
 #toutes_les_formations>div{
-    border-radius: 15px;;
+    border-radius: 15px;
+    width:30%;
+    height:65vh;
     padding:15px;
     margin:15px;
     box-shadow: 0px 0px 30px rgba(86, 86, 87, 0.652);
@@ -381,7 +395,9 @@ video{
 
 
 
-
+#toutes_les_formations>div>div>p{
+    margin:2%;
+}
 
 
 

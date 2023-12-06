@@ -5,8 +5,8 @@
   date_fin: 2020
   lieu: Dieppe, FR
   contenu_formation: >
-    J'y est appris tout ce qui était demandé à un élève de 3ème, mais en plus, j'y est appris la musique, grâce au dispositif de Classe à Horaires Aménagés Musique.
-
+    - programme du collège<br>
+    - musique:chant, solfège, violoncelle(CHAM)
 -
   nom_formation: Certificat D'Etudes Musicales
   etablissement: Conservatoire à Rayonnement Départemental Camille Saint Saëns
@@ -14,7 +14,12 @@
   date_fin: 2022
   lieu: Dieppe, FR
   contenu_formation: >
-    La musique est une partie importante de ma vie! En préparant le CEM, j'ai appris à jouer sans l'aide d'un professionnel.
+    - violoncelle <br>
+    - interprétation de tous types de musiques<br>
+    - solfège<br>
+    - réalisation d'une partition<br>
+    - reconnaissance d'une musique<br>
+
 
 -
   nom_formation: Baccalauréat Général
@@ -23,7 +28,13 @@
   date_fin: 2023
   lieu: Dieppe, FR
   contenu_formation: >
-    En plus du programme exigé, j'ai choisi les spécialités Numérique et Sciences Informatiques, Mathématiques, et Physique-Chimie. J'ai obtenu mon bac avec la mention 'Très Bien'.
+    - programme du lycée<br>
+    - Spé 1: Numérique et Sciences Informatiques<br>
+    - Spé 2: Mathématiques<br>
+    - Spé 3: Physique-Chimie<br>
+    - Anglais (Classe Euro avec DNL Mathématiques)<br>
+    - Espagnol<br>
+
 
 -
   nom_formation: BTS Services Informatiques aux organisations
@@ -31,4 +42,9 @@
   date_debut: 2023
   date_fin: 2025
   lieu: Caen, FR
-  contenu_formation: J'apprend à développer dnas des langages comme HTML, CSS, JS, PHP, JAVA, PYTHON, et a répondre aux besoinx des clients. On m'enseigne aussi les bases en réseau
+  contenu_formation: >
+    - HTML / CSS / JS / PHP<br>
+    - JAVA<br>
+    - PYTHON<br>
+    - Support utilisateur<br>
+    - Bases réseau (Protocoles, VM, Routage, Adressage)
