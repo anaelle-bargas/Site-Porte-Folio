@@ -108,117 +108,140 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
                 <div id = "toutes_les_formations">
                 
                     <div>
-                        <div>
-                            <p id="onglet_formations">Diplôme</p>
-                            <p><b style="color:#213049;"><?=$datas[0]["nom_formation"]?></b></p>
+                        <div id="blurDiv">
+                            <div>
+                                <p id="onglet_formations" style="font-size:7vmin"><?=$datas[0]["nom_formation"]?></p>
+                            </div>
                         </div>
-                        <div>
-                            <p id="onglet_formations">Etablissement</p>
-                            <p><?=$datas[0]["etablissement"]?></p>
+                        <div id = "notBlur">
+                            <p></p>
                         </div>
-                        <div>
-                            <p id="onglet_formations">Date de début</p>
-                            <p><?=$datas[0]["date_debut"]?></p>
+                        <!-- <div id="notBlur">
+                            <div>
+                                <p id="onglet_formations">Etablissement</p>
+                                <p><?=$datas[0]["etablissement"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de début</p>
+                                <p><?=$datas[0]["date_debut"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de fin</p>
+                                <p><?=$datas[0]["date_fin"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Lieu</p>
+                                <p><?=$datas[0]["lieu"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Contenu</p>
+                                <p><?=$datas[0]["contenu_formation"]?></p>
+                            </div>
+
+                        </div> -->
+                    </div>
+
+                    <div>
+                        <div id="blurDiv">
+                            <div>
+                                <p id="onglet_formations" style="font-size:7vmin"><?=$datas[1]["nom_formation"]?></p>
+                            </div>
                         </div>
-                        <div>
-                            <p id="onglet_formations">Date de fin</p>
-                            <p><?=$datas[0]["date_fin"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Lieu</p>
-                            <p><?=$datas[0]["lieu"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Contenu</p>
-                            <p><?=$datas[0]["contenu_formation"]?></p>
+
+                        <div id="notBlur">
+                            <div>
+                                <p id="onglet_formations">Etablissement</p>
+                                <p><?=$datas[1]["etablissement"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de début</p>
+                                <p><?=$datas[1]["date_debut"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de fin</p>
+                                <p><?=$datas[1]["date_fin"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Lieu</p>
+                                <p><?=$datas[1]["lieu"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Contenu</p>
+                                <p><?=$datas[1]["contenu_formation"]?></p>
+                            </div>
+
                         </div>
                     </div>
+
+
+                    <div>
+                        <div id="blurDiv">
+                            <div>
+                                <p id="onglet_formations" style="font-size:7vmin"><?=$datas[2]["nom_formation"]?></p>
+                            </div>
+                        </div>
+
+                        <div id="notBlur">
+                            <div>
+                                <p id="onglet_formations">Etablissement</p>
+                                <p><?=$datas[2]["etablissement"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de début</p>
+                                <p><?=$datas[2]["date_debut"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de fin</p>
+                                <p><?=$datas[2]["date_fin"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Lieu</p>
+                                <p><?=$datas[2]["lieu"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Contenu</p>
+                                <p><?=$datas[2]["contenu_formation"]?></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="blurDiv">
+                            <div>
+                                <p id="onglet_formations" style="font-size:7vmin"><?=$datas[3]["nom_formation"]?></p>
+                            </div>
+                        </div>
+
+                        <div id="notBlur">
+                            <div>
+                                <p id="onglet_formations">Etablissement</p>
+                                <p><?=$datas[3]["etablissement"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de début</p>
+                                <p><?=$datas[3]["date_debut"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date de fin</p>
+                                <p><?=$datas[3]["date_fin"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Lieu</p>
+                                <p><?=$datas[3]["lieu"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Contenu</p>
+                                <p><?=$datas[3]["contenu_formation"]?></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+               </div>
 
                     
-                    <div>
-                        <div>
-                            <p id="onglet_formations">Diplôme</p>
-                            <p><b style="color:#213049;"><?=$datas[1]["nom_formation"]?></b></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Etablissement</p>
-                            <p><?=$datas[1]["etablissement"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de début</p>
-                            <p><?=$datas[1]["date_debut"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de fin</p>
-                            <p><?=$datas[1]["date_fin"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Lieu</p>
-                            <p><?=$datas[1]["lieu"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Contenu</p>
-                            <p><?=$datas[1]["contenu_formation"]?></p>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <div>
-                            <p id="onglet_formations">Diplôme</p>
-                            <p><b style="color:#213049;"><?=$datas[2]["nom_formation"]?></b></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Etablissement</p>
-                            <p><?=$datas[2]["etablissement"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de début</p>
-                            <p><?=$datas[2]["date_debut"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de fin</p>
-                            <p><?=$datas[2]["date_fin"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Lieu</p>
-                            <p><?=$datas[2]["lieu"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Contenu</p>
-                            <p><?=$datas[2]["contenu_formation"]?></p>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <div>
-                            <p id="onglet_formations">Diplôme</p>
-                            <p><b style="color:#213049;"><?=$datas[3]["nom_formation"]?></b></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Etablissement</p>
-                            <p><?=$datas[3]["etablissement"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de début</p>
-                            <p><?=$datas[3]["date_debut"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Date de fin</p>
-                            <p><?=$datas[3]["date_fin"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Lieu</p>
-                            <p><?=$datas[3]["lieu"]?></p>
-                        </div>
-                        <div>
-                            <p id="onglet_formations">Contenu</p>
-                            <p><?=$datas[3]["contenu_formation"]?></p>
-                        </div>
-                    </div>
-   
-               </div>
             </div>
 
         </div>

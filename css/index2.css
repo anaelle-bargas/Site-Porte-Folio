@@ -381,8 +381,35 @@ video{
     justify-content: flex-start;
 }
 
+/* #blurDiv{
+    height:65vh;
+    width:24.5%;
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
 
+#blurDiv{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(162, 0, 255, 0.13);
+    
+}
 
+#notBlur{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 255, 255, 0.13);
+}
+
+/* #notBlur{
+    filter: blur(10px);
+} */
 
 #toutes_les_formations>div{
     border-radius: 15px;
