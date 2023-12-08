@@ -45,23 +45,20 @@ function check_passionnee(){
 
 }
 
-function retire_visible_affiche(i){
+function affiche_details(i){
   document.querySelectorAll("#visible")[i].style.display="none";
   document.querySelectorAll("#invisible")[i].style.display="flex";
 
 }
 
 
-function retire_invisible_affiche(i){
+function retire_details(i){
   document.querySelectorAll("#visible")[i].style.display="flex";
   document.querySelectorAll("#invisible")[i].style.display="none";
 
 }
 
 
-function handleFragmentLoad(fragmentId) {
-  console.log('Vous êtes sur le fragment avec l\'ID:', fragmentId);
-}
 
 
 
@@ -69,8 +66,10 @@ function handleFragmentLoad(fragmentId) {
 //   console.log("blouuuuuuuuu")
 // }
 
-actuelle_div="bla";
+var actuelle_div=document.getElementById("accueil");
 window.addEventListener('scroll', function() {console.log("srooooooooool")
+  console.log(actuelle_div.id)
+  document.querySelector("#div_"+actuelle_div.id+">a>div").style.backgroundColor = "white";
   const hauteur_site= document.querySelector("body").offsetHeight;
   var actuelle_hauteur=window.scrollY;
   const hauteur_cent_vh=document.querySelector("#accueil").offsetHeight
@@ -88,7 +87,7 @@ window.addEventListener('scroll', function() {console.log("srooooooooool")
   }
   console.log("actuelle : ", actuelle_div)
   // console.log(document.getElementById("div_"+actuelle_div.id).style.backgroundColor)
-  document.querySelector("#div_"+actuelle_div.id+">div").style.backgroundColor = "rgb(60,179,113)";
+  document.querySelector("#div_"+actuelle_div.id+">a>div").style.backgroundColor = "rgb(172, 173, 180)";
   // console.log(document.getElementById("div_"+actuelle_div.id).style.backgroundColor)
   console.log(hauteur_site);
 });

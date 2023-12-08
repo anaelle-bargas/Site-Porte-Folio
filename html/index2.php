@@ -134,7 +134,7 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
                 
                 <div id = "toutes_les_formations">
                 
-                    <div onmouseover="retire_visible_affiche(0)" onmouseout="retire_invisible_affiche(0)">
+                    <div onmouseover="affiche_details(0)" onmouseout="retire_details(0)">
                         <div id="visible">
                             <div>
                                 <p id="onglet_formations" style="font-size:7vmin"><?=$datas[0]["nom_formation"]?></p>
@@ -162,7 +162,7 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
                         </div>
                     </div>
 
-                    <div onmouseover="retire_visible_affiche(1)" onmouseout="retire_invisible_affiche(1)">
+                    <div onmouseover="affiche_details(1)" onmouseout="retire_details(1)">
                         <div id="visible">
                             <div>
                                 <p id="onglet_formations" style="font-size:7vmin"><?=$datas[1]["nom_formation"]?></p>
@@ -191,7 +191,7 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
                     </div>
 
 
-                    <div onmouseover="retire_visible_affiche(2)" onmouseout="retire_invisible_affiche(2)">
+                    <div onmouseover="affiche_details(2)" onmouseout="retire_details(2)">
                         <div id="visible">
                             <div>
                                 <p id="onglet_formations" style="font-size:7vmin"><?=$datas[2]["nom_formation"]?></p>
@@ -220,7 +220,7 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
                     </div>
 
 
-                    <div onmouseover="retire_visible_affiche(3)" onmouseout="retire_invisible_affiche(3)">
+                    <div onmouseover="affiche_details(3)" onmouseout="retire_details(3)">
                         <div id="visible">
                             <div>
                                 <p id="onglet_formations" style="font-size:7vmin"><?=$datas[3]["nom_formation"]?></p>
@@ -259,117 +259,164 @@ $datas = yaml_parse_file("./../yaml/index2.yaml");
         <div id = "competences" onvisible = "actuelle_div(this.id)">
             <div id= "div_for_scroll">
                 
-                <div id = "toutes_les_formations">
+                <div id = "toutes_les_competences">
                 
-                    <div onmouseover="retire_visible_affiche(0)" onmouseout="retire_invisible_affiche(0)">
+                    <div onmouseover="affiche_details(4)" onmouseout="retire_details(4)">
                         <div id="visible">
                             <div>
-                                <p id="onglet_formations" style="font-size:7vmin">HTML, CSS</p>
+                                <p id="onglet_formations" style="font-size:7vmin;">HTML, CSS</p>
+                                <p style="font-size:2vmin;margin-top:0px;margin-left:1.5%;">Développement</p>
                             </div>
                         </div>
 
-                        <div id="invisible">
-                            <div>
-                                <p id="onglet_formations">Etablissement</p>
-                                <p><?=$datas[0]["etablissement"]?></p>
-                            </div>
-                            <div>
-                                <p id="onglet_formations">Date</p>
-                                <p><?=$datas[0]["date_debut"]?> - <?=$datas[0]["date_fin"]?></p>
-                            </div>
-                            <div>
-                                <p id="onglet_formations">Lieu</p>
-                                <p><?=$datas[0]["lieu"]?></p>
-                            </div>
-                            <div>
-                                <p id="onglet_formations">Contenu</p>
-                                <p><?=$datas[0]["contenu_formation"]?></p>
-                            </div>
+                        <div id="invisible" >
+                            <div class="progressBar"></div>
 
                         </div>
                     </div>
 
-                    <div onmouseover="retire_visible_affiche(1)" onmouseout="retire_invisible_affiche(1)">
+                    <div onmouseover="affiche_details(5)" onmouseout="retire_details(5)">
                         <div id="visible">
                             <div>
                                 <p id="onglet_formations" style="font-size:7vmin">PHP</p>
+                                <p style="font-size:2vmin;margin-top:0px;margin-left:1.5%;">Développement</p>
                             </div>
                         </div>
 
                         <div id="invisible">
                             <div>
                                 <p id="onglet_formations">Etablissement</p>
-                                <p><?=$datas[1]["etablissement"]?></p>
+                                <p><?=$datas[5]["etablissement"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Date</p>
-                                <p><?=$datas[1]["date_debut"]?> - <?=$datas[1]["date_fin"]?></p>
+                                <p><?=$datas[5]["date_debut"]?> - <?=$datas[5]["date_fin"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Lieu</p>
-                                <p><?=$datas[1]["lieu"]?></p>
+                                <p><?=$datas[5]["lieu"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Contenu</p>
-                                <p><?=$datas[1]["contenu_formation"]?></p>
+                                <p><?=$datas[5]["contenu_formation"]?></p>
                             </div>
 
                         </div>
                     </div>
 
 
-                    <div onmouseover="retire_visible_affiche(2)" onmouseout="retire_invisible_affiche(2)">
+                    <div onmouseover="affiche_details(6)" onmouseout="retire_details(6)">
                         <div id="visible">
                             <div>
                                 <p id="onglet_formations" style="font-size:7vmin">JS</p>
+                                <p style="font-size:2vmin;margin-top:0px;margin-left:1.5%;">Développement</p>
                             </div>
                         </div>
 
                         <div id="invisible">
                             <div>
                                 <p id="onglet_formations">Etablissement</p>
-                                <p><?=$datas[2]["etablissement"]?></p>
+                                <p><?=$datas[6]["etablissement"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Date</p>
-                                <p><?=$datas[2]["date_debut"]?> - <?=$datas[2]["date_fin"]?></p>
+                                <p><?=$datas[6]["date_debut"]?> - <?=$datas[6]["date_fin"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Lieu</p>
-                                <p><?=$datas[2]["lieu"]?></p>
+                                <p><?=$datas[6]["lieu"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Contenu</p>
-                                <p><?=$datas[2]["contenu_formation"]?></p>
+                                <p><?=$datas[6]["contenu_formation"]?></p>
                             </div>
 
                         </div>
                     </div>
 
 
-                    <div onmouseover="retire_visible_affiche(3)" onmouseout="retire_invisible_affiche(3)">
+                    <div onmouseover="affiche_details(7)" onmouseout="retire_details(7)">
                         <div id="visible">
                             <div>
-                                <p id="onglet_formations" style="font-size:7vmin">ENVIRONNEMENT BABYLONE JS</p>
+                                <p id="onglet_formations" class="title_scroll">SQL</p>
+                                <p style="font-size:2vmin;margin-top:0px;margin-left:1.5%;">Développement</p>
                             </div>
                         </div>
 
                         <div id="invisible">
                             <div>
                                 <p id="onglet_formations">Etablissement</p>
-                                <p><?=$datas[3]["etablissement"]?></p>
+                                <p><?=$datas[7]["etablissement"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Date</p>
-                                <p><?=$datas[3]["date_debut"]?> - <?=$datas[3]["date_fin"]?></p>
+                                <p><?=$datas[7]["date_debut"]?> - <?=$datas[7]["date_fin"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Lieu</p>
-                                <p><?=$datas[3]["lieu"]?></p>
+                                <p><?=$datas[7]["lieu"]?></p>
                             </div>
                             <div>
                                 <p id="onglet_formations">Contenu</p>
-                                <p><?=$datas[3]["contenu_formation"]?></p>
+                                <p><?=$datas[7]["contenu_formation"]?></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div onmouseover="affiche_details(8)" onmouseout="retire_details(8)">
+                        <div id="visible">
+                            <div>
+                                <p id="onglet_formations" class="title_scroll">BABYLONE JS 3D</p>
+                                <p style="font-size:2vmin;margin-top:0px;margin-left:1.5%;">Développement</p>
+                            </div>
+                        </div>
+
+                        <div id="invisible">
+                            <div>
+                                <p id="onglet_formations">Etablissement</p>
+                                <p><?=$datas[8]["etablissement"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date</p>
+                                <p><?=$datas[8]["date_debut"]?> - <?=$datas[8]["date_fin"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Lieu</p>
+                                <p><?=$datas[8]["lieu"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Contenu</p>
+                                <p><?=$datas[8]["contenu_formation"]?></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div onmouseover="affiche_details(9)" onmouseout="retire_details(9)">
+                        <div id="visible">
+                            <div>
+                                <p id="onglet_formations" class="title_scroll">PYTHON</p>
+                                <p style="font-size:2vmin;margin-top:0px;margin-left:1.5%;">Développement</p>
+                            </div>
+                        </div>
+
+                        <div id="invisible">
+                            <div>
+                                <p id="onglet_formations">Etablissement</p>
+                                <p><?=$datas[9]["etablissement"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Date</p>
+                                <p><?=$datas[9]["date_debut"]?> - <?=$datas[9]["date_fin"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Lieu</p>
+                                <p><?=$datas[9]["lieu"]?></p>
+                            </div>
+                            <div>
+                                <p id="onglet_formations">Contenu</p>
+                                <p><?=$datas[9]["contenu_formation"]?></p>
                             </div>
 
                         </div>

@@ -353,10 +353,10 @@ video{
 
 
 
-#formations{
+#formations, #competences{
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     width:90%;
     height:100vh;
@@ -367,7 +367,7 @@ video{
 
 #div_for_scroll{
     /* padding:5%; */
-    width:auto;
+    width:200%;
     overflow-x: scroll;
     overflow-y: hidden;
     margin-left: 2%;
@@ -376,7 +376,7 @@ video{
     align-items: center; */
     justify-content: flex-start;
 }
-#toutes_les_formations{
+#toutes_les_formations, #toutes_les_competences{
     height:auto;
     width:120%;
     padding: 4%;
@@ -385,15 +385,19 @@ video{
     justify-content: flex-start;
 }
 
-
+.title_scroll{
+    font-size:8vmin!important;
+}
 
 #visible{
     height:100%;
-    width:100%;
+    width:95%;
     display:flex;
     align-items: center;
-    justify-content: center;
+    padding-left:5%;
     background-color: #2130491d;
+    /* color:linear-gradient(0.25turn, #3f87a6, #ebf8e1); */
+    color:#21304967;
     
 }
 
@@ -408,7 +412,7 @@ video{
     width:80%;
 }
 
-#toutes_les_formations>div{
+#toutes_les_formations>div, #toutes_les_competences>div{
     border-radius: 15px;
     width:30%;
     height:65vh;
@@ -419,15 +423,15 @@ video{
 
 
 
-#toutes_les_formations>div>div>p{
+#toutes_les_formations>div>div>p, #toutes_les_competences>div>div>p{
     margin:2%;
 }
 
-#competences{
+/* #competences{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 
