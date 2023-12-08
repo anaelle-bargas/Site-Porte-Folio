@@ -89,8 +89,9 @@ video{
     flex-direction: row;
     justify-content: flex-start;
     background-color: white;
-    box-shadow: 0px 0px 50px rgba(86, 86, 87, 0.356);
-    border-radius: 35px;
+    /* box-shadow: 0px 0px 50px rgba(86, 86, 87, 0.356); */
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
 }
 
 
@@ -130,6 +131,9 @@ video{
     transition-duration: 0.5s;
 } */
 
+
+
+
 #centre_droite>div>a>div>img{
     height: 50%;
     width:auto;
@@ -152,7 +156,7 @@ video{
     transform:translateX(40%);
     background-color: white;
 }
-#centre_droite>div>p{
+#centre_droite>div>a>p{
     padding-left:5%;
     font-family: 'Great Vibes', cursive;
     font-size:3vmin;
@@ -381,35 +385,28 @@ video{
     justify-content: flex-start;
 }
 
-/* #blurDiv{
-    height:65vh;
-    width:24.5%;
-    position:absolute;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    
-} */
 
-#blurDiv{
+
+#visible{
     height:100%;
     width:100%;
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(162, 0, 255, 0.13);
+    background-color: #2130491d;
     
 }
 
-#notBlur{
-    height: 100%;
-    width:100%;
-    background-color: rgba(0, 255, 255, 0.13);
-}
 
-/* #notBlur{
-    filter: blur(10px);
-} */
+
+#invisible{
+    padding: 10%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width:80%;
+}
 
 #toutes_les_formations>div{
     border-radius: 15px;
@@ -425,6 +422,13 @@ video{
 #toutes_les_formations>div>div>p{
     margin:2%;
 }
+
+#competences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 

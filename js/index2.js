@@ -1,3 +1,4 @@
+console.log("clic");
 function rapetisser(i){
     document.querySelectorAll("#centre_droite>div>div>img")[i].style.height="50%";
     console.log("bla")
@@ -13,7 +14,6 @@ nbClick = 0;
 
 
 function onglets_sur_le_cote(){
-  console.log("clic")
   document.querySelector("#centre_droite").style.right="-16%";
   document.querySelector("#centre_gauche").style.right="-16%";
   document.querySelector("#centre_gauche").style.position="fixed";
@@ -26,17 +26,15 @@ function onglets_sur_le_cote(){
     document.querySelector("#div_experiences").classList.add('div_experiences');
     document.querySelector("#div_contact").classList.add('div_contact');
     document.querySelector("#div_a_propos").classList.add('div_a_propos');
+    
+    
+    document.querySelectorAll("#centre_droite>div").forEach((div) => div.style.boxShadow="0px 0px 50px rgba(86, 86, 87, 0.356)");
+    
   } 
 }
 
-// var div_actuelle = "premiere_vue";
-
-// function actuelle_div(id_div){
-//   document.querySelector("#div_"+id_div).style.transform="translateX(-30%);"
-// }
 
 function check_qui(){
-  
   document.getElementById("radio_passionnee").checked=false;
   document.getElementById("paroles").style.animation="deplacement_passionnee_qui 1s 0.0s ease-out forwards";
 }
@@ -47,24 +45,53 @@ function check_passionnee(){
 
 }
 
+function retire_visible_affiche(i){
+  document.querySelectorAll("#visible")[i].style.display="none";
+  document.querySelectorAll("#invisible")[i].style.display="flex";
+
+}
+
+
+function retire_invisible_affiche(i){
+  document.querySelectorAll("#visible")[i].style.display="flex";
+  document.querySelectorAll("#invisible")[i].style.display="none";
+
+}
+
+
+function handleFragmentLoad(fragmentId) {
+  console.log('Vous êtes sur le fragment avec l\'ID:', fragmentId);
+}
 
 
 
+// function actuelle_div(){
+//   console.log("blouuuuuuuuu")
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+actuelle_div="bla";
+window.addEventListener('scroll', function() {console.log("srooooooooool")
+  const hauteur_site= document.querySelector("body").offsetHeight;
+  var actuelle_hauteur=window.scrollY;
+  const hauteur_cent_vh=document.querySelector("#accueil").offsetHeight
+  const ratio=parseInt(hauteur_site/hauteur_cent_vh); //= hauteur du site / 100vh 
+  console.log(hauteur_site, actuelle_hauteur, ratio, hauteur_cent_vh)
+  var i=0;
+  for(i=0;i<ratio;i++){
+    if(((i*hauteur_cent_vh)<=actuelle_hauteur) && (actuelle_hauteur<=((i+1)*hauteur_cent_vh))){
+      
+      console.log(document.querySelectorAll("body>div")[i]);
+      
+      actuelle_div=document.querySelectorAll("body>div")[i];
+      console.log(i)
+    }
+  }
+  console.log("actuelle : ", actuelle_div)
+  // console.log(document.getElementById("div_"+actuelle_div.id).style.backgroundColor)
+  document.querySelector("#div_"+actuelle_div.id+">div").style.backgroundColor = "rgb(60,179,113)";
+  // console.log(document.getElementById("div_"+actuelle_div.id).style.backgroundColor)
+  console.log(hauteur_site);
+});
 
 
 
